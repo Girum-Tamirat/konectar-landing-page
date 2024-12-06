@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Girum-Tamirat.github.io/konectar-landing-page",
+  "homepage": "https://girum-tamirat.github.io/konectar-landing-page",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
