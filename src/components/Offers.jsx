@@ -2,6 +2,7 @@ import React from 'react';
 import farmer from "../images/farmer.png"
 import fruits from "../images/fruits.png"
 import truck from "../images/truck.png"
+import hero5 from "../images/hero5.png"
 
 function Offers() {
   const offersData = [
@@ -40,7 +41,10 @@ function Offers() {
   return (
     <section
       id="offers"
-      className="bg-[linear-gradient(to_right_,rgba(6,8,15,0.8),rgba(6,8,12,0.8)),url('../images/hero5.png')] bg-cover bg-center bg-no-repeat font-Manrope justify-center items-center py-14 px-8 md:px-16"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(6,8,15,0.8), rgba(6,8,12,0.8)), url(${hero5})`,
+      }}
+      className="bg-cover bg-center bg-no-repeat font-Manrope justify-center items-center py-14 px-8 md:px-16"
     >
       <h1 className="font-Manrope text-white text-center text-[2rem] md:text-[2.8rem] font-bold mb-6">
         What We Offer!

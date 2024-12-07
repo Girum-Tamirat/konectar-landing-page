@@ -9,7 +9,7 @@ function Navbar () {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 py-3 bg-white border-b border-neutral70">
+    <nav className="sticky top-0 z-50 py-3 bg-neutral-100 border-b border-neutral70">
       <div className="container mx-auto px-8 md:px-16">
         <div className="flex justify-between items-center">
           <div className="basis-2/5 lg:basis-1/5">

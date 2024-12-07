@@ -1,12 +1,12 @@
 import React from 'react';
-import hunger from "../images/zero-hunger.png"
-import hunger2 from "../images/zero-2.png"
-import decent from "../images/decent-work.png"
-import decent2 from "../images/decent-2.png"
-import industry from "../images/industry-innovation.png"
-import industry2 from "../images/innovation-2.png"
-import responsible from "../images/responsible-consumption.png"
-import responsible2 from "../images/responsible-2.png"
+import hunger from "../images/zero-hunger.png";
+import hunger2 from "../images/zero-2.png";
+import decent from "../images/decent-work.png";
+import decent2 from "../images/decent-2.png";
+import industry from "../images/industry-innovation.png";
+import industry2 from "../images/innovation-2.png";
+import responsible from "../images/responsible-consumption.png";
+import responsible2 from "../images/responsible-2.png";
 
 const SDGMission = () => {
   const images = [
@@ -21,7 +21,7 @@ const SDGMission = () => {
       alt: "SDG 8",
     },
     {
-      default:industry,
+      default: industry,
       hover: industry2,
       alt: "SDG 9",
     },
@@ -33,29 +33,29 @@ const SDGMission = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center mt-10 px-10">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="relative group w-full h-full transition-all duration-500 ease-in-out"
-        >
-          {/* Default Image */}
-          <img
-            className="h-full w-full object-cover transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0"
-            src={image.default}
-            alt={image.alt}
-            loading="lazy"
-          />
-          {/* Hover Image */}
-          <img
-            className="h-full w-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-            src={image.hover}
-            alt={`${image.alt} Hover`}
-            loading="lazy"
-          />
-        </div>
-      ))}
-    </div>
+    <section className="bg-[#003333] py-20">
+      <h1 className="font-Manrope text-white text-[2rem] md:text-[2.8rem] font-bold mb-6 text-center">
+        Konectar's SDG Mission
+      </h1>
+      <hr />
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center mt-10 px-10">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="transition-all duration-500 ease-in-out"
+          >
+            <img
+              className="h-[100%] w-[100%]"
+              src={image.default}
+              alt={image.alt}
+              loading="lazy"
+              onMouseOver={(e) => (e.currentTarget.src = image.hover)}
+              onMouseOut={(e) => (e.currentTarget.src = image.default)}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
